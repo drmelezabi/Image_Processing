@@ -1,0 +1,49 @@
+{
+  "name": "image-processing",
+  "version": "1.0.0",
+  "description": "image resizing app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && npx jasmine build/tests/indexSpec.js",
+    "build": "npx tsc",
+    "start": "nodemon src/index.ts",
+    "lint": "eslint --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "prettier": "prettier --config .prettierrc src/**/*.ts --write"
+  },
+  "keywords": [
+    "resize",
+    "image",
+    "photo"
+  ],
+  "author": "Mohamed ElEzabi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "sharp": "^0.30.7",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.6",
+    "@types/express": "^4.17.13",
+    "@types/express-validator": "^3.0.0",
+    "@types/image-size": "^0.8.0",
+    "@types/jasmine": "^4.0.3",
+    "@types/node": "^18.7.8",
+    "@types/sharp": "^0.30.5",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "5.33",
+    "@typescript-eslint/parser": "^5.34.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "image-size": "^1.0.2",
+    "jasmine": "^4.3.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.19",
+    "prettier": "2.7.1",
+    "supertest": "^6.2.4",
+    "typescript": "^4.7.4"
+  }
+}
